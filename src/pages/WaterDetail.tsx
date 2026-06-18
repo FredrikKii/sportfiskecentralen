@@ -24,6 +24,7 @@ export default function WaterDetail() {
         title={water.name}
         description={water.description}
         gradient={water.gradient}
+        image={water.image}
       />
 
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -56,6 +57,22 @@ export default function WaterDetail() {
                   <dt className="font-semibold tracking-wide text-sand uppercase">Tillgång</dt>
                   <dd className="mt-1 text-cream/70">{water.access}</dd>
                 </div>
+                {water.fishingPermitUrl && (
+                  <div>
+                    <dt className="font-semibold tracking-wide text-sand uppercase">Fiskekort</dt>
+                    <dd className="mt-1 text-cream/70">
+                      Fiskekort krävs.{' '}
+                      <a
+                        href={water.fishingPermitUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sand underline decoration-sand/40 underline-offset-2 transition-colors hover:text-cream"
+                      >
+                        {water.fishingPermitLabel ?? 'Köp via iFiske'}
+                      </a>
+                    </dd>
+                  </div>
+                )}
                 <div>
                   <dt className="font-semibold tracking-wide text-sand uppercase">Arter</dt>
                   <dd className="mt-2 flex flex-wrap gap-2">

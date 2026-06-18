@@ -6,6 +6,7 @@ const footerLinks = [
   { to: '/rapporter', label: 'Rapporter' },
   { to: '/guider', label: 'Guider' },
   { to: '/kontakt', label: 'Kontakt' },
+  { to: '/credits', label: 'Bildkrediter' },
 ]
 
 export default function Footer() {

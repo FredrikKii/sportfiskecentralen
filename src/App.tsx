@@ -11,6 +11,7 @@ import ReportDetail from './pages/ReportDetail'
 import Guides from './pages/Guides'
 import GuideDetail from './pages/GuideDetail'
 import Contact from './pages/Contact'
+import Credits from './pages/Credits'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/guider" element={<Guides />} />
           <Route path="/guider/:id" element={<GuideDetail />} />
           <Route path="/kontakt" element={<Contact />} />
+          <Route path="/credits" element={<Credits />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
