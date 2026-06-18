@@ -5,7 +5,7 @@ import GuideCard from '../components/GuideCard'
 import { guides } from '../data/guides'
 import type { GuideSection } from '../data/guides'
 import { getById } from '../utils/helpers'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { usePageMeta } from '../hooks/usePageMeta'
 import NotFound from './NotFound'
 
 function GuideSectionContent({ section }: { section: GuideSection }) {
@@ -61,7 +61,11 @@ export default function GuideDetail() {
   const { id } = useParams<{ id: string }>()
   const guide = id ? getById(guides, id) : undefined
 
-  useDocumentTitle(guide?.title ?? 'Guide')
+  usePageMeta({
+    title: guide?.title ?? 'Guide',
+    description: guide?.description,
+    path: id ? `/guider/${id}` : undefined,
+  })
 
   if (!guide) return <NotFound />
 

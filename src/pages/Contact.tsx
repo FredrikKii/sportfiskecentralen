@@ -1,10 +1,15 @@
 import PageHeader from '../components/PageHeader'
 import ReportForm from '../components/ReportForm'
 import Newsletter from '../components/Newsletter'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Contact() {
-  useDocumentTitle('Kontakt')
+  usePageMeta({
+    title: 'Kontakt',
+    description:
+      'Hör av dig med fiskerapporter, frågor eller idéer – vi bygger Sportfiskecentralen tillsammans med lokala sportfiskare.',
+    path: '/kontakt',
+  })
 
   return (
     <>

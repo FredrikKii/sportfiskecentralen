@@ -9,10 +9,14 @@ import Newsletter from '../components/Newsletter'
 import { waters } from '../data/waters'
 import { reports } from '../data/reports'
 import { guides } from '../data/guides'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Home() {
-  useDocumentTitle('Sportfisket mitt i Skåne')
+  usePageMeta({
+    title: 'Sportfisket mitt i Skåne',
+    description:
+      'Guider, fiskerapporter och lokala vatten för sportfiskare i centrala Skåne – abborre, gädda, gös och mer.',
+  })
 
   const latestReports = [...reports]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())

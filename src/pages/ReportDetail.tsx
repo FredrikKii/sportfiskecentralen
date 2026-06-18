@@ -4,14 +4,18 @@ import PageHeader from '../components/PageHeader'
 import ReportCard from '../components/ReportCard'
 import { reports } from '../data/reports'
 import { formatDate, getById } from '../utils/helpers'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { usePageMeta } from '../hooks/usePageMeta'
 import NotFound from './NotFound'
 
 export default function ReportDetail() {
   const { id } = useParams<{ id: string }>()
   const report = id ? getById(reports, id) : undefined
 
-  useDocumentTitle(report?.title ?? 'Rapport')
+  usePageMeta({
+    title: report?.title ?? 'Rapport',
+    description: report?.excerpt,
+    path: id ? `/rapporter/${id}` : undefined,
+  })
 
   if (!report) return <NotFound />
 

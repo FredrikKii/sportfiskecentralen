@@ -5,11 +5,16 @@ import FilterChips from '../components/FilterChips'
 import EmptyState from '../components/EmptyState'
 import GuideCard from '../components/GuideCard'
 import { guides } from '../data/guides'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { matchesSearch, uniqueSorted } from '../utils/filter'
 
 export default function Guides() {
-  useDocumentTitle('Guider')
+  usePageMeta({
+    title: 'Guider',
+    description:
+      'Praktiska fiskeguider för abborre, gädda, gös och put and take – anpassade för lokala vatten i Skåne.',
+    path: '/guider',
+  })
   const [query, setQuery] = useState('')
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null)
 

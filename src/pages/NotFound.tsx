@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function NotFound() {
-  useDocumentTitle('Sidan hittades inte')
+  usePageMeta({
+    title: 'Sidan hittades inte',
+    description: 'Sidan du letar efter finns inte eller har flyttats.',
+  })
   return (
     <div className="flex flex-1 flex-col items-center justify-center px-4 py-32 text-center">
       <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-sand uppercase">404</p>

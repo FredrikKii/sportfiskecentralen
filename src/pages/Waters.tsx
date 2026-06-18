@@ -5,11 +5,16 @@ import FilterChips from '../components/FilterChips'
 import EmptyState from '../components/EmptyState'
 import WaterCard from '../components/WaterCard'
 import { waters } from '../data/waters'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { matchesSearch, uniqueSorted } from '../utils/filter'
 
 export default function Waters() {
-  useDocumentTitle('Fiskevatten')
+  usePageMeta({
+    title: 'Fiskevatten',
+    description:
+      'Utforska guider till Ringsjöarna, Dagstorpssjön och andra fiskevatten i Höörtrakten och omnejd.',
+    path: '/fiskevatten',
+  })
   const [query, setQuery] = useState('')
   const [speciesFilter, setSpeciesFilter] = useState<string | null>(null)
 

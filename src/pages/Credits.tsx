@@ -1,9 +1,13 @@
 import PageHeader from '../components/PageHeader'
 import { imageCredits } from '../data/imageCredits'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Credits() {
-  useDocumentTitle('Bildkrediter')
+  usePageMeta({
+    title: 'Bildkrediter',
+    description: 'Fotografier och licenser för bilder som används på Sportfiskecentralen.',
+    path: '/credits',
+  })
 
   return (
     <>

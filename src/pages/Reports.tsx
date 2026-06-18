@@ -5,11 +5,15 @@ import FilterChips from '../components/FilterChips'
 import EmptyState from '../components/EmptyState'
 import ReportCard from '../components/ReportCard'
 import { reports } from '../data/reports'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { matchesSearch, uniqueSorted } from '../utils/filter'
 
 export default function Reports() {
-  useDocumentTitle('Rapporter')
+  usePageMeta({
+    title: 'Rapporter',
+    description: 'Senaste fiskerapporterna från lokala vatten i Höör och Ringsjöbygden.',
+    path: '/rapporter',
+  })
   const [query, setQuery] = useState('')
   const [speciesFilter, setSpeciesFilter] = useState<string | null>(null)
 

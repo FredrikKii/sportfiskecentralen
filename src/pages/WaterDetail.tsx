@@ -4,14 +4,19 @@ import PageHeader from '../components/PageHeader'
 import WaterCard from '../components/WaterCard'
 import { waters } from '../data/waters'
 import { getById } from '../utils/helpers'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { usePageMeta } from '../hooks/usePageMeta'
 import NotFound from './NotFound'
 
 export default function WaterDetail() {
   const { id } = useParams<{ id: string }>()
   const water = id ? getById(waters, id) : undefined
 
-  useDocumentTitle(water?.name ?? 'Fiskevatten')
+  usePageMeta({
+    title: water?.name ?? 'Fiskevatten',
+    description: water?.description,
+    image: water?.image?.src,
+    path: id ? `/fiskevatten/${id}` : undefined,
+  })
 
   if (!water) return <NotFound />
 
