@@ -32,7 +32,7 @@ export const waters: Water[] = [
     name: 'Ringsjöarna',
     species: ['Abborre', 'Gädda', 'Gös', 'Mört'],
     description:
-      'Skånes största sjösystem med varierad struktur – från grunda vassvikar till djupare partier. Ett klassiskt vatten för abborre och gös året runt.',
+      'Ett av de mest spännande fiskevattnen i mellersta Skåne – grunda vassvikar, öppet vatten och djupare partier för abborre, gös och gädda.',
     gradient: 'from-forest-dark via-forest to-forest-light',
     image: {
       src: 'https://commons.wikimedia.org/wiki/Special:FilePath/Blue_hour_at_the_Lake_(23151926910).jpg?width=1280',
@@ -46,10 +46,11 @@ export const waters: Water[] = [
     access: 'Flera ramper och naturliga landningsplatser längs strandlinjen. Bra tillgång från land i östra och södra delarna.',
     fishingPermitUrl: 'https://www.ifiske.se/fiskekort-ringsjon.htm',
     content: [
-      'Ringsjöarna består av Östra och Västra Ringsjön och utgör ett av Skånes mest mångsidiga fiskevatten. Strukturen varierar kraftigt – grunda vassvikar i norr, öppna pelagiska partier i mitten och branta kanter längs vissa stränder.',
-      'Abborren är vattenets mest tillgängliga art. Under våren samlas den i grunda vikar med tempererat vatten. Jiggfiske med 5–8 cm jiggar i naturliga färger fungerar bra. Vasskanten är ofta produktiv redan när vattnet passerar 8–10 grader.',
-      'Gösen håller till i djupare partier, särskilt kring Östra Ringsjön. Vertikalfiske med jiggar och livebete är klassiska metoder. Trolling med djupgående wobblers kan ge fina fiskar under sommaren när gösen står djupare.',
-      'Gäddan jagar aktivt längs vasslinjer och i sund mellan sjöarna. Kvällsfiske med spinnare och jerkbaits är särskilt givande under hösten. Ytfiske fungerar bra när vattnet är varmt och gäddan står grunt.',
+      'Ringsjöarna är utan tvekan ett av de mest spännande fiskevattnen i mellersta Skåne. Sjösystemet består av Östra och Västra Ringsjön och bjuder på allt från grunda vassvikar till öppet vatten och djupare partier. Oavsett om du fiskar från land, kajak eller båt finns det gott om vatten att utforska.',
+      'Abborren är den art jag oftast kommer i kontakt med här. På våren söker den sig in i de grunda vikarna där vattnet värms upp först. Då kan fisket vara riktigt bra med mindre jiggar i naturliga färger. När temperaturen stiger hittar man ofta fisken längs vasskanter, djupbranter och områden där betesfisken samlas.',
+      'För den som jagar gös är framför allt Östra Ringsjön värd att lägga tid på. Under sommaren står fisken ofta djupare och då fungerar både vertikalfiske och trolling bra. Kvällar med svag vind kan ge riktigt fina fiskar, särskilt under de varmare månaderna.',
+      'Gäddan finns i stora delar av sjösystemet och kan dyka upp nästan var som helst. Själv brukar jag leta längs vassbälten, sund och djupbranter där betesfisken samlas. Under hösten är gäddfisket ofta som bäst, och då kan större jiggar, jerkbaits och andra beten som fiskas långsamt vara riktigt effektiva. När vattnet är varmt kan ytbete ge några av årets mest explosiva hugg, men var försiktig med hanteringen av gäddan under de allra varmaste dagarna då den har svårare att återhämta sig efter fångst.',
+      'Det som gör Ringsjöarna så intressanta är variationen. Här finns gott om vatten att utforska och det känns som att man alltid kan hitta nya platser och nya fiskar, oavsett om målet är abborre, gös eller gädda. För den som vill hålla det enkelt fungerar en klassisk Myrans-spinnare fortfarande riktigt bra och har sannolikt fångat fler gäddor i Ringsjöarna än många av dagens moderna beten.',
     ],
   },
   {
