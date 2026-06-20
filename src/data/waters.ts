@@ -58,7 +58,7 @@ export const waters: Water[] = [
     name: 'Sätoftasjön',
     species: ['Abborre', 'Gädda', 'Gös', 'Mört'],
     description:
-      'Djupaste delen av Ringsjösystemet med varierad struktur – från grunda vassvikar till djupare pelagiska partier. Ett givande vatten för gös och abborre.',
+      'Del av Ringsjösystemet med djup på upp mot 17 meter – särskilt intressant för gös, abborre och gädda.',
     gradient: 'from-forest via-forest-dark to-charcoal',
     image: {
       src: satoftasjon,
@@ -71,10 +71,11 @@ export const waters: Water[] = [
     access: 'Fiske från land och båt. Tillhör Ringsjön FVOF – samma fiskekort gäller som för övriga Ringsjöarna.',
     fishingPermitUrl: 'https://www.ifiske.se/fiskekort-ringsjon.htm',
     content: [
-      'Sätoftasjön är en del av Ringsjösystemet och hänger ihop med Östra Ringsjön. Här finns systemets största djup – upp mot 17 meter – vilket gör sjön särskilt intressant för gösfiske och vertikalfiske i djupare partier.',
-      'Strukturen varierar mellan grunda, vassiga vikar och öppna pelagiska ytor. Abborren är aktiv längs vasskanten under våren och försommaren. Jiggfiske med 5–8 cm jiggar i naturliga färger fungerar bra när abborren står grunt.',
-      'Gösen håller ofta till i djupare vatten och kan fångas med vertikalfiske, jiggar och trolling. Under sommaren när gösen står djupare kan djupgående wobblers och vertikalmetoder ge fina fiskar.',
-      'Gäddan jagar längs vasslinjer och i övergångar mellan grunt och djupt vatten. Kvällsfiske med spinnare och jerkbaits är produktivt under hösten. Kom ihåg att samma fiskeregler och minimimått gäller som för hela Ringsjön FVOF.',
+      'Sätoftasjön är en del av Ringsjösystemet och hänger samman med Östra Ringsjön. Trots att den inte är den största delen av systemet är den väl värd ett besök, inte minst eftersom här finns några av Ringsjöns djupaste partier med djup på upp mot 17 meter. Det gör sjön särskilt intressant för den som vill rikta fisket mot gös.',
+      'Abborren är en vanlig fångst i Sätoftasjön och under våren söker den sig ofta in mot de grundare vikarna där vattnet värms upp först. Då kan fisket vara riktigt bra med mindre jiggar i naturliga färger. När sommaren kommer hittar man ofta fisken längs vasskanter, djupbranter och områden där betesfisken samlas.',
+      'För den som jagar gös är Sätoftasjön ett av de mest intressanta områdena i Ringsjösystemet. Under sommaren står gösen ofta djupt och då fungerar både vertikalfiske och trolling mycket bra. Kvällar och nätter med lugnt väder kan vara särskilt givande, och det är inte ovanligt att de större fiskarna fångas just då.',
+      'Gäddan finns i stora delar av sjön och jagar gärna längs vassbälten, djupkanter och övergångar mellan grunt och djupt vatten. Under hösten brukar gäddfisket vara som bäst, och då kan större jiggar, jerkbaits och andra långsamt fiskade beten vara mycket effektiva. När vattnet är som varmast under sommaren är det viktigt att hantera gäddan varsamt och släppa tillbaka den så snabbt som möjligt.',
+      'Det som gör Sätoftasjön så intressant är kombinationen av djupa partier och grunda vikar. Här finns goda möjligheter att få både abborre, gös och gädda, och sjön passar lika bra för den som vill utforska nya vatten som för den som vill rikta in sig på en specifik art.',
     ],
   },
   {
