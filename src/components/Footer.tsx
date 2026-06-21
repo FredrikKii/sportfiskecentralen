@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import HeroBackground from './HeroBackground'
 
 const footerLinks = [
   { to: '/', label: 'Hem' },
@@ -7,12 +8,14 @@ const footerLinks = [
   { to: '/guider', label: 'Guider' },
   { to: '/kontakt', label: 'Kontakt' },
   { to: '/credits', label: 'Bildkrediter' },
+  { to: '/integritet', label: 'Integritetspolicy' },
 ]
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-charcoal">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <footer className="relative overflow-hidden border-t border-white/5">
+      <HeroBackground />
+      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           <div>
             <p className="font-serif text-2xl text-cream">Sportfiskecentralen</p>

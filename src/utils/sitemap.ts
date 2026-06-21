@@ -33,6 +33,7 @@ export function getSitemapEntries(): SitemapEntry[] {
     })),
     { path: '/kontakt', changefreq: 'monthly', priority: 0.6 },
     { path: '/credits', changefreq: 'monthly', priority: 0.3 },
+    { path: '/integritet', changefreq: 'monthly', priority: 0.3 },
   ]
 }
 

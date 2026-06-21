@@ -7,6 +7,21 @@
     scroll-behavior: smooth;
   }
 
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
     @apply bg-charcoal font-sans text-cream antialiased;
   }
@@ -18,5 +33,70 @@
   select option {
     background-color: #1c1c1c;
     color: #f5f2eb;
+  }
+}
+
+@layer utilities {
+  @keyframes cookie-banner-in {
+    from {
+      opacity: 0;
+      transform: translateY(1.5rem) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .animate-cookie-banner-in {
+    animation: cookie-banner-in 0.45s ease-out both;
+  }
+
+  @keyframes newsletter-success-in {
+    from {
+      opacity: 0;
+      transform: translateY(1rem) scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes newsletter-check-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    60% {
+      transform: scale(1.08);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes newsletter-check-draw {
+    from {
+      stroke-dashoffset: 24;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .animate-newsletter-success-in {
+    animation: newsletter-success-in 0.5s ease-out both;
+  }
+
+  .animate-newsletter-check-pop {
+    animation: newsletter-check-pop 0.45s ease-out both;
+  }
+
+  .animate-newsletter-check-draw {
+    stroke-dasharray: 24;
+    stroke-dashoffset: 24;
+    animation: newsletter-check-draw 0.35s ease-out 0.2s both;
   }
 }
