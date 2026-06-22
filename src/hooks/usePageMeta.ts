@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import { DEFAULT_DESCRIPTION, DEFAULT_OG_IMAGE, SITE_NAME } from '../config/site'
+import { DEFAULT_DESCRIPTION, DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '../config/site'
 
 export interface PageMetaOptions {
   title: string
@@ -27,7 +27,8 @@ function toAbsoluteUrl(url: string): string {
     return url
   }
 
-  return `${window.location.origin}${url.startsWith('/') ? url : `/${url}`}`
+  const base = SITE_URL.replace(/\/$/, '')
+  return `${base}${url.startsWith('/') ? url : `/${url}`}`
 }
 
 export function usePageMeta({ title, description, image, path }: PageMetaOptions) {
@@ -46,6 +47,13 @@ export function usePageMeta({ title, description, image, path }: PageMetaOptions
     setMetaTag('property', 'og:title', fullTitle)
     setMetaTag('property', 'og:description', pageDescription)
     setMetaTag('property', 'og:image', imageUrl)
+    setMetaTag('property', 'og:image:width', '1024')
+    setMetaTag('property', 'og:image:height', '537')
+    setMetaTag('property', 'og:image:alt', `${SITE_NAME} – sportfiske i centrala Skåne`)
+    setMetaTag('name', 'twitter:card', 'summary_large_image')
+    setMetaTag('name', 'twitter:title', fullTitle)
+    setMetaTag('name', 'twitter:description', pageDescription)
+    setMetaTag('name', 'twitter:image', imageUrl)
     setMetaTag('property', 'og:url', pageUrl)
     setMetaTag('property', 'og:type', 'website')
     setMetaTag('property', 'og:site_name', SITE_NAME)
