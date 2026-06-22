@@ -83,8 +83,6 @@ export default function GuideDetail() {
         <BackLink to="/guider" label="Alla guider" />
 
         <div className="mx-auto max-w-3xl">
-          <p className="mb-10 text-sm text-cream/40">Läsningstid: {guide.readTime}</p>
-
           <article className="space-y-10">
             {guide.sections.map((section) => (
               <GuideSectionContent key={section.heading} section={section} />

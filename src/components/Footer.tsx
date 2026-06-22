@@ -16,11 +16,14 @@ export default function Footer() {
     <footer className="relative overflow-hidden border-t border-white/5">
       <HeroBackground />
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-12 md:grid-cols-2">
           <div>
             <p className="font-serif text-2xl text-cream">Sportfiskecentralen</p>
             <p className="mt-3 text-sm leading-relaxed text-cream/50">
               Fiske • Guider • Rapporter • Gemenskap
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-cream/40">
+              Sportfiskeguider och rapporter från centrala Skåne – Höör, Ringsjöarna och omnejd.
             </p>
           </div>
 
@@ -41,15 +44,6 @@ export default function Footer() {
               ))}
             </ul>
           </nav>
-
-          <div>
-            <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-sand uppercase">
-              Region
-            </p>
-            <p className="text-sm leading-relaxed text-cream/50">
-              Höör, Ringsjöarna, Dagstorpssjön och omnejd – mitt i Skåne.
-            </p>
-          </div>
         </div>
 
         <div className="mt-12 border-t border-white/5 pt-8">

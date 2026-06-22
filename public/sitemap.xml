@@ -86,6 +86,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://sportfiskecentralen.se/guider/abborrfiske-skane</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sportfiskecentralen.se/guider/fiske-ringsjoarna</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

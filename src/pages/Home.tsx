@@ -18,6 +18,9 @@ export default function Home() {
       'Guider, fiskerapporter och lokala vatten för sportfiskare i centrala Skåne – abborre, gädda, gös och mer.',
   })
 
+  const featuredWaters = waters.slice(0, 6)
+  const featuredGuides = guides.slice(0, 8)
+
   const latestReports = [...reports]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 3)
@@ -36,7 +39,7 @@ export default function Home() {
             description="Från Ringsjöarnas vidsträckta vatten till mindre åar och bäckar – här hittar du guider till de bästa fiskeplatserna i centrala Skåne."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {waters.map((water) => (
+            {featuredWaters.map((water) => (
               <WaterCard key={water.id} water={water} />
             ))}
           </div>
@@ -96,7 +99,7 @@ export default function Home() {
             description="Praktiska guider för abborre, gädda, gös och put and take – skrivna för skånska förhållanden."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {guides.map((guide) => (
+            {featuredGuides.map((guide) => (
               <GuideCard key={guide.id} guide={guide} />
             ))}
           </div>

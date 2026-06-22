@@ -8,11 +8,10 @@ interface GuideCardProps {
 export default function GuideCard({ guide }: GuideCardProps) {
   return (
     <article className="group flex flex-col rounded-sm border border-white/5 bg-charcoal-light p-6 transition-all duration-300 hover:-translate-y-1 hover:border-forest-light/30 hover:shadow-lg hover:shadow-black/20">
-      <div className="mb-4 flex items-center justify-between">
+      <div className="mb-4">
         <span className="text-xs font-semibold tracking-[0.15em] text-sand uppercase">
           {guide.category}
         </span>
-        <span className="text-xs text-cream/40">{guide.readTime}</span>
       </div>
 
       <Link to={`/guider/${guide.id}`}>

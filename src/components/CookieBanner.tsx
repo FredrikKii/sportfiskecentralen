@@ -14,6 +14,7 @@ function CookieIcon() {
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false)
   const location = useLocation()
+  const isPrivacyPage = location.pathname === '/integritet'
 
   useEffect(() => {
     setVisible(getCookieConsent() === null)
@@ -32,6 +33,34 @@ export default function CookieBanner() {
   }
 
   if (!visible) return null
+
+  if (isPrivacyPage) {
+    return (
+      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-charcoal-light/95 backdrop-blur-sm">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-4 sm:flex-row sm:px-6 lg:px-8">
+          <p className="text-center text-sm text-cream/70 sm:text-left">
+            Cookies och analys – välj nedan när du läst integritetspolicyn.
+          </p>
+          <div className="flex shrink-0 gap-2">
+            <button
+              type="button"
+              onClick={reject}
+              className="rounded-sm border border-cream/20 px-4 py-2 text-sm font-semibold text-cream transition-colors hover:border-sand/40 hover:bg-white/5"
+            >
+              Avvisa
+            </button>
+            <button
+              type="button"
+              onClick={accept}
+              className="rounded-sm bg-forest px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-forest-light"
+            >
+              Acceptera cookies
+            </button>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <>
