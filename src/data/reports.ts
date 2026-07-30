@@ -11,6 +11,52 @@ export interface Report {
 
 export const reports: Report[] = [
   {
+    id: 'abborre-gamla-bo-kanalen',
+    title: 'Abborre och gädda i Gamla Bo-kanalen',
+    date: '2026-07-28',
+    location: 'Gamla Bo-kanalen, Ringsjöarna',
+    species: ['Abborre', 'Gädda'],
+    author: 'Fredrik Eriksson',
+    excerpt:
+      'Fiskade mellan Ringsjöarna och Gamla Bo-kanalen. Småabborre jagade betesfisk mot strandkanterna, medan större borrar på cirka 35 cm tog mitt i kanalen på djupet med 5 cm Westin Shadteez.',
+    content: [
+      'Fiskade mellan Ringsjöarna och Gamla Bo-kanalen den 28 juli. Jag upplevde att fisken rör sig mellan sjöarna i olika takt – emellanåt var det småabborre som jagade små betesfisk upp mot strandkanterna.',
+      'De större borrarna, runt 35 cm, fick jag mitt i kanalen på djupet. Bästa betet var en 5 cm Westin Shadteez med 3,5 g skalle.',
+      'När gäddan istället var den som huggit har abborrarna lyst med sin frånvaro i ungefär 30 minuter innan de kommit tillbaka. Ett tydligt mönster som är värt att ha i bakhuvudet när man fiskar kanalen.',
+    ],
+  },
+  {
+    id: 'abborre-vaxsjon-juli',
+    title: 'Abborrfiske från brygga i Vaxsjön – tyst dag i juli',
+    date: '2026-07-20',
+    location: 'Vaxsjön',
+    species: ['Abborre'],
+    author: 'Fredrik Eriksson',
+    excerpt:
+      'Landfiske efter abborre från bryggorna vid Vaxsjön utanför Höör. Jigg 5–7 cm, jerkbait och dropbite – men fisket var stendött den här dagen.',
+    content: [
+      'Den 20 juli fiskade jag abborre i Vaxsjön, mitt i centrala Skåne mellan Frostavallen och Skånes Djurpark. Sjöns bryggor är smidigt placerade längs stranden och passar bra för landfiske utan båt.',
+      'Jag kastade mest från bryggorna med jiggar på 5–7 cm, och testade även jerkbait och dropbite. Tyvärr var det helt stendött – varken hugg eller följningar att tala om.',
+      'Vaxsjön är ändå värd ett återbesök. Nästa gång blir det andra sträckor längs sjön för att se vad abborr- och gäddfisket har att erbjuda när fisken är mer aktiv.',
+    ],
+  },
+  {
+    id: 'abborre-tjornarpssjon-juli',
+    title: 'Småabborre runt ön i Tjörnarpssjön',
+    date: '2026-07-15',
+    location: 'Tjörnarpssjön',
+    species: ['Abborre'],
+    author: 'Fredrik Eriksson',
+    excerpt:
+      'Fint och varmt väder, båt hyrd via FVOF. Småabborre stod både vassnära och mitt ute i sjön – gäddan lyste med sin frånvaro trots Buster Jerk.',
+    content: [
+      'Den 15 juli var det fint och varmt väder, så jag hyrde en båt av Tjörnarpssjöns FVOF – smidigt och enkelt arrangerat.',
+      'Jag började vassnära och vid näckrosorna och fick snabbt ett gäng småabborrar. När jag sedan rodde lite längre ut och la några kast mitt ute i “ingenstans” kom det abborre direkt där också.',
+      'Därefter rodde jag runt ön i sjön och fiskade av de små sunden och runt fallna träd. Där var det mer sparsamt – något enstaka hugg, men inget mer än så.',
+      'Jag hade även med gäddspöt och drog ett par kast med favoriten Buster Jerk, men gäddorna var inte aktiva den här dagen.',
+    ],
+  },
+  {
     id: 'abborre-ringsjon',
     title: 'Abborren börjar röra på sig i Ringsjön',
     date: '2026-06-12',
